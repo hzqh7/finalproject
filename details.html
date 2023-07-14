@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Google Fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400;700&display=swap');
+        body{
+            font-family: 'Ysabeau SC', sans-serif;
+            background: rgba(0, 0, 0, 0.6) url(pp.jpg);
+            background-blend-mode: darken ;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 a{
+            color: yellow; 
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header p {
+            font-size: 18px;
+            color: ghostwhite;
+        }
+        
+        .movie-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        
+        #moviePoster {
+            width: 300px;
+            height: 450px;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+        }
+        
+        #movieDetails {
+            width: 300px;
+            text-align: center;
+            color: ghostwhite;
+        }
+    </style>
+
+<body>
+    <div class="header">
+        <br><br><br><br><br>
+        <h1><a href="index.html">BACK TO HOME</a></h1>
+        <p>Details of your favourite movies, all at the tip of your finger!</p>
+
+        <div class="movie-container">
+            <div id="moviePoster"></div>
+            <div id="movieDetails" class="movie-details"></div>
+        </div>
+    </div>
+    
+    <script src="details.js"></script>
+</body>
+</html>

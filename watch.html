@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="searchbar">
+      <input type="text" id="searchInput" placeholder="Enter a movie title" />
+      <button id="searchButton" onclick="movieSearch()">Search</button>
+    </div>
+    <h2>Search Results</h2>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Movie ID</th>
+          <th> Add to Wishlist :</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody" style="color:white; text-decoration: none;"></tbody>
+    </table>
+    <div id="watchlistContainer">
+      <h2>My Watchlist</h2>
+      <table id="watchlistTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Movie ID</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="watchlistBody" style="color:white; text-decoration: none;"></tbody>
+      </table>
+    </div>
+    <button onclick="goToHome()">Back to Home</button>
+    <script src="watch.js"></script>
+  </body>
+</html>

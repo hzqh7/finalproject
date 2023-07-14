@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <input type="text" id="search-input" placeholder="Enter a movie title">
+  <button onclick="movieSearch()">Search</button>
+  <h2>Search Results</h2>
+  <table id="resultsTable" style="color:white; text-decoration: none;">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Movie ID</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="resultsList" style="color:white; text-decoration: none;"></tbody>
+  </table>
+  <h2>Recommendations</h2>
+  <table id="recommendationsTable" style="color:white; text-decoration: none;">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Movie ID</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="recommendationsList" style="color:white; text-decoration: none;"></tbody>
+  </table>
+  <button onclick="goToHome()">Back to Home</button>
+
+  <script src="reco.js"></script>
+  <script>
+    function goToHome() {
+      // Redirect or perform the necessary action to go back to the home page
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
+
